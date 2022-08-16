@@ -5,3 +5,8 @@ const quarterOf = (month) => {
   if (month === 10 || month === 11 || month === 12) return 4
 }
 console.log(quarterOf(11))    // returns 4
+
+// a simpler way to solve this
+const quarter = m => Math.ceil(m/3)
+
+console.log(quarter(11)) // returns 4
